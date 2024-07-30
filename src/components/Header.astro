@@ -1,9 +1,13 @@
 ---
-const Title = "Welocome to PolyCat's website";
+interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
 ---
 
 <header>
-    <h1>{Title}</h1>
+    <h1>{title}</h1>
     <hr />
 </header>
 

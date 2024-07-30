@@ -2,10 +2,15 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import LinkTree from "../components/LinkTree.astro";
+
+const Title = "PolyCat - Home"
+const Description = "Welcome to PolyCat's corner of the internet"
+
+const HeaderTitle = "Welocome to PolyCat's website";
 ---
 
-<Layout title="PolyCat">
-    <Header />
+<Layout title={Title} description={Description} >
+    <Header title={HeaderTitle} />
     <div>
         <LinkTree />
     </div>
