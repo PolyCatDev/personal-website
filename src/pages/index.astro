@@ -1,0 +1,22 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import LinkTree from "../components/LinkTree.astro";
+---
+
+<Layout title="PolyCat">
+    <Header />
+    <div>
+        <LinkTree />
+    </div>
+</Layout>
+
+<style>
+    div {
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: center;
+		box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.5);
+    }
+
+</style>
