@@ -1,7 +1,15 @@
 ---
-const Mastodon = "https://sunny.garden/@PolyCat";
-const Cara = "https://cara.app/polycat";
-const Github = "https://github.com/PolyCatDev";
+
+interface Link {
+  href: string;
+  text: string;
+}
+
+interface Props {
+    links: Link[];
+}
+
+const { links } = Astro.props;
 ---
 
 <div>
@@ -9,9 +17,7 @@ const Github = "https://github.com/PolyCatDev";
     <hr />
 
     <nav>
-        <a href={Mastodon}>Mastodon</a>
-        <a href={Cara}>Cara</a>
-        <a href={Github}>Github</a>
+        { links.map( link => (<a href={link.href}>{link.text}</a>)) }
     </nav>
 </div>
 
