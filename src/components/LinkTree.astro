@@ -6,14 +6,15 @@ interface Link {
 }
 
 interface Props {
+    title: string;
     links: Link[];
 }
 
-const { links } = Astro.props;
+const { title, links } = Astro.props;
 ---
 
 <div>
-    <h3>You can find me here</h3>
+    <h3>{title}</h3>
     <hr />
 
     <nav>
