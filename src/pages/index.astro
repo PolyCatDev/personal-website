@@ -3,16 +3,21 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import LinkTree from "../components/LinkTree.astro";
 
-const Title = "PolyCat - Home"
-const Description = "PolyCat's corner of the internet"
-
+const Title = "PolyCat - Home";
+const Description = "PolyCat's corner of the internet";
 const HeaderTitle = "Welocome to PolyCat's website";
+
+const SocialLinks = [
+    { href: "https://sunny.garden/@PolyCat", text: "Mastodon" },
+    { href: "https://cara.app/polycat", text: "Cara" },
+    { href: "https://github.com/PolyCatDev", text: "Github" },
+];
 ---
 
-<Layout title={Title} description={Description} >
+<Layout title={Title} description={Description}>
     <Header title={HeaderTitle} />
     <div>
-        <LinkTree />
+        <LinkTree links={SocialLinks} />
     </div>
 </Layout>
 
@@ -21,7 +26,6 @@ const HeaderTitle = "Welocome to PolyCat's website";
         background-color: whitesmoke;
         display: flex;
         justify-content: center;
-		box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.5);
     }
-
 </style>
