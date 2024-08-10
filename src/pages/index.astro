@@ -13,19 +13,29 @@ const SocialLinks = [
     { href: "https://github.com/PolyCatDev", text: "Github" },
 ];
 
+const ContactLinks = [
+    {
+        href: "mailto:contact.polycat@proton.me",
+        text: "contact.polycat@proton.me",
+    },
+];
+
 const ProjectLinks = [
     { href: "https://github.com/PolyCatDev/bluecat", text: "BlueCat" },
     { href: "https://flipper-cafe.duckdns.org/", text: "Flipper Cafe" },
     { href: "https://github.com/PolyCatDev/obs-waykey", text: "OBS WayKey" },
 ];
-
 ---
 
 <Layout title={Title} description={Description}>
     <Header title={HeaderTitle} />
     <div>
         <LinkTree title="You can find me here" links={SocialLinks} />
-        <LinkTree title="Here are some of my cool projects" links={ProjectLinks} />
+        <LinkTree title="Contact me here" links={ContactLinks} />
+        <LinkTree
+            title="Here are some of my cool projects"
+            links={ProjectLinks}
+        />
     </div>
 </Layout>
 
