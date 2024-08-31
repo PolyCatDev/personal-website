@@ -1,9 +1,8 @@
 ---
-
 interface Link {
-  href: string;
-  text: string;
-  label: string;
+    href: string;
+    text: string;
+    label: string;
 }
 
 interface Props {
@@ -19,7 +18,13 @@ const { title, links } = Astro.props;
     <hr />
 
     <nav>
-        { links.map( link => (<a href={link.href} aria-label={link.label} >{link.text}</a>)) }
+        {
+            links.map((link) => (
+                <a href={link.href} aria-label={link.label}>
+                    {link.text}
+                </a>
+            ))
+        }
     </nav>
 </div>
 
@@ -44,5 +49,4 @@ const { title, links } = Astro.props;
     h3 {
         margin: 0;
     }
-
 </style>
