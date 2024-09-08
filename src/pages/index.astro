@@ -7,6 +7,8 @@ const Title = "PolyCat - Home";
 const Description = "PolyCat's corner of the internet";
 const HeaderTitle = "Welocome to PolyCat's website";
 
+const Mastodon = "https://sunny.garden/@PolyCat";
+
 const SocialLinks = [
     {
         href: "https://sunny.garden/@PolyCat",
@@ -53,23 +55,16 @@ const ProjectLinks = [
 ---
 
 <Layout title={Title} description={Description}>
-    <Header title={HeaderTitle} />
-    <LinkTree title="You can find me here" links={SocialLinks} />
-    <LinkTree title="Contact me here" links={ContactLinks} />
-    <LinkTree title="Here are some of my cool projects" links={ProjectLinks} />
+    <a rel="me" href={Mastodon} aria-label="Hidden Mastodon validation link"
+    ></a>
+    <div>
+        <Header>{HeaderTitle}</Header>
+        <LinkTree title="You can find me here" links={SocialLinks} />
+        <LinkTree title="Contact me here" links={ContactLinks} />
+        <LinkTree
+            title="Here are some of my cool projects"
+            links={ProjectLinks}
+        />
+    </div>
 </Layout>
 
-<style>
-    div {
-        background-color: whitesmoke;
-        display: flex;
-        justify-content: center;
-        box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.5);
-    }
-
-    @media (max-width: 664px) {
-        div {
-            flex-direction: column;
-        }
-    }
-</style>

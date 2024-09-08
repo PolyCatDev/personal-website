@@ -1,19 +1,16 @@
 ---
-interface Props {
-    title: string;
-}
-
-const { title } = Astro.props;
+import container from "../styles/container.module.css";
 ---
 
-<header>
-    <h1>{title}</h1>
-    <hr />
+<header class="container">
+    <h1><slot></slot></h1>
 </header>
 
 <style>
+
     h1 {
         text-align: center;
+        margin: 0;
     }
 
     hr {

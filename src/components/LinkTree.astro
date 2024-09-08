@@ -11,42 +11,38 @@ interface Props {
 }
 
 const { title, links } = Astro.props;
+
+import WideButton from "./WideButton.astro";
+
 ---
 
-<div>
-    <h3>{title}</h3>
+<div class="container">
+    <h2>{title}</h2>
     <hr />
 
     <nav>
         {
             links.map((link) => (
-                <a href={link.href} aria-label={link.label}>
+                <WideButton href={link.href} aria-label={link.label}>
                     {link.text}
-                </a>
+                </WideButton>
             ))
         }
     </nav>
 </div>
 
 <style>
-    div {
-        text-align: center;
-        padding: 20px;
-        padding-top: 10px;
-    }
 
     nav {
         display: flex;
         flex-direction: column;
     }
-
-    a {
-        color: darkslategray;
-        font-weight: bold;
-        padding: 2px;
+    
+    hr {
+        color: rgb(204, 194, 178);
     }
 
-    h3 {
+    h2 {
         margin: 0;
     }
 </style>

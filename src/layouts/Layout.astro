@@ -5,8 +5,6 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
-
-const Mastodon = "https://sunny.garden/@PolyCat";
 ---
 
 <!doctype html>
@@ -20,23 +18,39 @@ const Mastodon = "https://sunny.garden/@PolyCat";
         <title>{title}</title>
     </head>
     <body>
-        <a rel="me" href={Mastodon} aria-label="Hidden Mastodon validation link"
-        ></a>
         <slot />
     </body>
 </html>
 <style is:global>
     * {
-        font-family: Courier, monospace;
+        font-family: sans-serif, Arial;
+        --text-color: rgb(247, 235, 217);
+        --link-color: rgb(228, 208, 167);
+    }
+
+    .container {
+        color: var(--text-color);
+        text-align: center;
+        padding: 20px;
+        margin: 20px;
+        background-color: rgb(74, 75, 85);
+        border-radius: 20px;
+        box-shadow: 0 0 15px rgba(20, 13, 22, 0.699);
+        padding: 40px;
+        border: 5px solid rgb(23, 23, 26);
     }
 
     body {
         margin: 0;
-        background-color: #ddd;
+        background-color: #2d2831;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
     }
 
     a {
         text-decoration: none;
+        color: var(--link-color);
     }
 
     a:hover {
