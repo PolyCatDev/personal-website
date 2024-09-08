@@ -11,7 +11,6 @@ interface Props {
 }
 
 const { title, links } = Astro.props;
-
 ---
 
 <div class="container">
@@ -31,7 +30,6 @@ const { title, links } = Astro.props;
 
 <style>
     nav {
-        padding: 0 40px;
         font-size: 120%;
         display: flex;
         flex-direction: column;
@@ -45,6 +43,7 @@ const { title, links } = Astro.props;
         box-shadow: 0 0 12px rgb(58, 58, 88);
         margin: 3px 0;
     }
+
     a {
         font-weight: bold;
         padding: 2px;
