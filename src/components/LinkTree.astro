@@ -12,8 +12,6 @@ interface Props {
 
 const { title, links } = Astro.props;
 
-import WideButton from "./WideButton.astro";
-
 ---
 
 <div class="container">
@@ -23,21 +21,34 @@ import WideButton from "./WideButton.astro";
     <nav>
         {
             links.map((link) => (
-                <WideButton href={link.href} aria-label={link.label}>
-                    {link.text}
-                </WideButton>
+                <a href={link.href} aria-label={link.label}>
+                    <div class="link">{link.text}</div>
+                </a>
             ))
         }
     </nav>
 </div>
 
 <style>
-
     nav {
         padding: 0 40px;
         font-size: 120%;
+        display: flex;
+        flex-direction: column;
     }
-    
+
+    div.link {
+        background-color: rgb(92, 119, 134);
+        border-radius: 30px;
+        padding: 20px;
+        border: 5px solid rgb(34, 36, 41);
+        box-shadow: 0 0 12px rgb(58, 58, 88);
+    }
+    a {
+        font-weight: bold;
+        padding: 2px;
+    }
+
     hr {
         color: rgb(204, 194, 178);
     }
