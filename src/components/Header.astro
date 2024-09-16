@@ -1,11 +1,21 @@
+---
+interface Props {
+    motto: string;
+}
+
+const { motto } = Astro.props;
+---
+
 <header class="container">
     <h1><slot /></h1>
+    <h3>{motto}</h3>
 </header>
 
 <style>
-    h1 {
+    h1, h3 {
         text-align: center;
         margin: 0;
+        padding: 3px;
     }
 
     hr {

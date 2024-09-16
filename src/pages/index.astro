@@ -5,7 +5,7 @@ import LinkTree from "../components/LinkTree.astro";
 
 const Title = "PolyCat - Home";
 const Description = "PolyCat's corner of the internet";
-const HeaderTitle = "Welocome to PolyCat's website";
+const HeaderTitle = "Welocome to the Cat Index";
 
 const Mastodon = "https://sunny.garden/@PolyCat";
 
@@ -58,7 +58,7 @@ const ProjectLinks = [
     <a rel="me" href={Mastodon} aria-label="Hidden Mastodon validation link"
     ></a>
     <div>
-        <Header>{HeaderTitle}</Header>
+        <Header motto="An index of all of PolyCat's stuff">{HeaderTitle}</Header>
         <div>
             <LinkTree title="You can find me here" links={SocialLinks} />
             <LinkTree title="Contact me here" links={ContactLinks} />
