@@ -11,8 +11,8 @@
     "format": "prettier src/*/*.astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.2",
-    "astro": "^4.13.3",
+    "@astrojs/check": "^0.9.3",
+    "astro": "^4.15.10",
     "typescript": "^5.5.4"
   },
   "devDependencies": {
