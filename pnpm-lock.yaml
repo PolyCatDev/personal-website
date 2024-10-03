@@ -17,13 +17,6 @@ importers:
       typescript:
         specifier: ^5.5.4
         version: 5.5.4
-    devDependencies:
-      prettier:
-        specifier: ^3.3.3
-        version: 3.3.3
-      prettier-plugin-astro:
-        specifier: ^0.14.1
-        version: 0.14.1
 
 packages:
 
@@ -1937,7 +1930,8 @@ snapshots:
 
   '@astrojs/compiler@2.10.3': {}
 
-  '@astrojs/compiler@2.9.2': {}
+  '@astrojs/compiler@2.9.2':
+    optional: true
 
   '@astrojs/internal-helpers@0.4.1': {}
 
@@ -3567,11 +3561,13 @@ snapshots:
       '@astrojs/compiler': 2.9.2
       prettier: 3.3.3
       sass-formatter: 0.7.9
+    optional: true
 
   prettier@2.8.7:
     optional: true
 
-  prettier@3.3.3: {}
+  prettier@3.3.3:
+    optional: true
 
   prismjs@1.29.0: {}
 
@@ -3722,11 +3718,13 @@ snapshots:
     dependencies:
       queue-microtask: 1.2.3
 
-  s.color@0.0.15: {}
+  s.color@0.0.15:
+    optional: true
 
   sass-formatter@0.7.9:
     dependencies:
       suf-log: 2.5.3
+    optional: true
 
   section-matter@1.0.0:
     dependencies:
@@ -3824,6 +3822,7 @@ snapshots:
   suf-log@2.5.3:
     dependencies:
       s.color: 0.0.15
+    optional: true
 
   supports-color@5.5.0:
     dependencies:
