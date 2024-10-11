@@ -5,6 +5,8 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
+
+import "../styles/text.css"
 ---
 
 <!doctype html>
@@ -22,11 +24,7 @@ const { title, description } = Astro.props;
     </body>
 </html>
 <style is:global>
-    * {
-        font-family: sans-serif, Arial;
-        --text-color: rgb(247, 235, 217);
-        --link-color: rgb(228, 208, 167);
-    }
+
 
     .container {
         color: var(--text-color);
