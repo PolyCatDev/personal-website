@@ -57,7 +57,11 @@ export default {
 				200: "#AF3A03"
 			}
 		},
-		extend: {},
+		extend: {
+			backgroundImage: {
+				'bkg-pattern': "url('/src/svg/bkg_pattern.svg')"
+			}
+		},
 	},
 	plugins: [],
 }
