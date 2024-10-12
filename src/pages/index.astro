@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import LinkTree from "../components/LinkTree.astro";
+import Spacer from "../components/Spacer.astro"
 
 const Title = "CatPlace - Home";
 const HeaderTitle = "Welocome to CatPlace";
@@ -49,7 +50,7 @@ const ProjectLinks = [
     {
         href: "https://github.com/PolyCatDev/bash-factory",
         text: "Bash Factory",
-        label: "Link to Bash Factory database"
+        label: "Link to Bash Factory database",
     },
     {
         href: "https://github.com/PolyCatDev/obs-waykey",
@@ -62,16 +63,57 @@ const ProjectLinks = [
 <Layout title={Title} description={Description}>
     <a rel="me" href={Mastodon} aria-label="Hidden Mastodon validation link"
     ></a>
-    <div class="flex-col items-center">
-        <Header motto={Description}>{HeaderTitle}</Header
-        >
-        <div>
-            <LinkTree title="You can find me here" links={SocialLinks} />
-            <LinkTree title="Contact me here" links={ContactLinks} />
-            <LinkTree
-                title="Here are some of my cool projects"
-                links={ProjectLinks}
-            />
+    <div class="flex justify-center">
+        <div class="md:flex">
+            <div>
+                <Header motto={Description}>{HeaderTitle}</Header>
+                <div>
+                    <LinkTree
+                        title="You can find me here"
+                        links={SocialLinks}
+                    />
+                    <LinkTree title="Contact me here" links={ContactLinks} />
+                    <LinkTree
+                        title="Here are some of my cool projects"
+                        links={ProjectLinks}
+                    />
+                </div>
+            </div>
+            <div>
+                <div class="m-5 p-6 bg-background-500 rounded-2xl">
+                    <h2 class="text-center m-2 font-bold text-2xl">
+                        Featured Video
+                    </h2>
+                    <iframe
+                        class="rounded-2xl"
+                        width="100%"
+                        height="315"
+                        src="https://www.youtube-nocookie.com/embed/RzM_-YTnQo0?si=c6u-7Zsg3zqaSN9L"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+                </div>
+                <!--૮₍´˶• . • ⑅ ₎ა  ::  /ᐠ. ｡.ᐟ\ᵐᵉᵒʷˎˊ˗  ::  /ᐠ - ˕ -マ  ::  ≽^• ˕ • ^≼></!--> 
+                <Spacer>  ૮₍´˶• . • ⑅ ₎ა </Spacer>
+
+                <div class="m-5">
+                    <iframe
+                        class="rounded-2xl"
+                        src="https://www5.cbox.ws/box/?boxid=953460&boxtag=UrEazW"
+                        width="100%"
+                        height="450"
+                        allowtransparency="yes"
+                        allow="autoplay"
+                        frameborder="0"
+                        marginheight="0"
+                        marginwidth="0"
+                        scrolling="auto"
+                        title="CatPlace Chat Box"></iframe>
+                </div>
+            </div>
         </div>
     </div>
+
 </Layout>
