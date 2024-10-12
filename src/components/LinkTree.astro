@@ -20,7 +20,7 @@ const { title, links } = Astro.props;
         {
             links.map((link) => (
                 <a href={link.href} aria-label={link.label}>
-                    <div class="bg-background-100 p-4 m-3 rounded-2xl text-center hover:underline font-bold border-4 border-background-600">{link.text}</div>
+                    <div class="bg-background-100 p-4 m-3 rounded-3xl text-center hover:underline font-bold border-4 border-background-600">{link.text}</div>
                 </a>
             ))
         }
