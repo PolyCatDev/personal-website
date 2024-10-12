@@ -19,7 +19,6 @@ export default {
 				300: "#D5C4A1",
 				400: "#EBDBB2",
 				500: "#FBF1C7",
-				600: "#FBF1C7"
 			},
 
 			red: {
