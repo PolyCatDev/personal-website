@@ -58,7 +58,7 @@ export default {
 		},
 		extend: {
 			backgroundImage: {
-				'bkg-pattern': "url('/src/svg/bkg_pattern.svg')"
+				'bkg-pattern': "url('/src/media/bkg_pattern.svg')"
 			}
 		},
 	},
