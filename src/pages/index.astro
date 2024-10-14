@@ -2,7 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import LinkTree from "../components/LinkTree.astro";
-import Spacer from "../components/Spacer.astro"
+import Spacer from "../components/Spacer.astro";
+import Iframe from "../components/Iframe.astro";
 
 const Title = "CatPlace - Home";
 const HeaderTitle = "Welocome to CatPlace";
@@ -80,36 +81,23 @@ const ProjectLinks = [
                 </div>
             </div>
             <div>
-                <div class="m-5 p-6 bg-background-500 rounded-2xl">
-                    <h2 class="text-center pb-4 font-bold text-2xl">
-                        Featured Video
-                    </h2>
-                    <iframe
-                        class="rounded-2xl"
-                        width="100%"
-                        height="315"
-                        src="https://inv.nadeko.net/embed/RzM_-YTnQo0?autoplay=0&controls=1&dark_mode=true&continue=0&quality=hd720&related_videos=false&player_style=youtube&local=false"
-                        title="Featured video player"
-                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowtransparency="yes"
-                        allowfullscreen></iframe>
-                </div>
-                <!--૮₍´˶• . • ⑅ ₎ა  ::  /ᐠ. ｡.ᐟ\ᵐᵉᵒʷˎˊ˗  ::  /ᐠ - ˕ -マ  ::  ≽^• ˕ • ^≼></!--> 
-                <Spacer>  ૮₍´˶• . • ⑅ ₎ა </Spacer>
+                <Iframe
+                    src="https://inv.nadeko.net/embed/RzM_-YTnQo0?autoplay=0&controls=1&dark_mode=true&continue=0&quality=hd720&related_videos=false&player_style=youtube&local=false"
+                    title="Featred Video Player"
+                    text="Featured Video"
+                    height="315px"
+                />
+                <!--૮₍´˶• . • ⑅ ₎ა  ::  /ᐠ. ｡.ᐟ\ᵐᵉᵒʷˎˊ˗  ::  /ᐠ - ˕ -マ  ::  ≽^• ˕ • ^≼></!-->
+                <Spacer> ૮₍´˶• . • ⑅ ₎ა </Spacer>
 
-                <div class="m-5">
-                    <iframe
-                        class="rounded-2xl"
-                        src="https://www5.cbox.ws/box/?boxid=953460&boxtag=UrEazW"
-                        width="100%"
-                        height="450"
-                        allowtransparency="yes"
-                        allow="autoplay"
-                        title="CatPlace Chat Box"></iframe>
-                </div>
+                <Iframe
+                    src="https://www5.cbox.ws/box/?boxid=953460&boxtag=UrEazW"
+                    title="Chat Box"
+                    text="Chatbox"
+                    rounded={false}
+                    height="420px"
+                />
             </div>
         </div>
     </div>
-
 </Layout>
