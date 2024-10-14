@@ -1,1 +1,9 @@
-<div class="bg-background-500 p-4 m-4 rounded-2xl text-center font-bold text-2xl"><slot /></div>
+---
+import Block from "../layouts/Block.astro";
+---
+
+<div class="font-bold text-2xl text-center">
+    <Block>
+        <slot />
+    </Block>
+</div>
