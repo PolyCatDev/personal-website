@@ -1,16 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Block from "../layouts/Block.astro"
 ---
 
 <Layout title="CatPlace - 404" description="The 404 CatPlace page">
-    <div class="flex justify-center">
-        <div class="bg-background-500 p-8 mt-12 rounded-2xl text-2xl md:text-4xl font-bold ">
+    <div class="flex justify-center text-2xl md:text-4xl font-bold">
+        <Block>
             <header class="text-center">
                 <h1>Oh hi. You fell out of bounds</h1>
                 <h2 class="text-2xl m-2">Here's the way back home</h2> <br>
             </header>
             <div class="flex before:ml-8">
-                <div class="whitespace-pre ">
+                <div class="whitespace-pre">
                     <span>&#8203;             へ         </span> <br>
                     <span>&#8203;        ૮  -   ՛ ) つ </span> <br>
                     <span>&#8203;         /   ⁻  ៸        </span> <br>
@@ -18,7 +19,6 @@ import Layout from "../layouts/Layout.astro";
                 </div>
                 <a href="/" ><button class="hover:underline">Home</button></a>
             </div>
-
-        </div>
+        </Block>
     </div>
 </Layout>
