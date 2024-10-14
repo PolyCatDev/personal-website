@@ -11,24 +11,27 @@ interface Props {
 }
 
 const { title, links } = Astro.props;
+
+import Block from "./Block.astro";
 ---
 
-<div class="bg-background-500 p-6 m-5 rounded-xl">
-    <h2 class="text-center text-3xl font-bold p-2" >{title}</h2>
+<Block>
+    <h2 class="text-center text-3xl font-bold p-2">{title}</h2>
 
     <nav class="text-lg flex-col">
         {
             links.map((link) => (
                 <a href={link.href} aria-label={link.label}>
-                    <div class="bg-background-100 p-4 m-3 rounded-3xl text-center hover:underline font-bold border-4 border-background-600">{link.text}</div>
+                    <div class="bg-background-100 p-4 m-3 rounded-3xl text-center hover:underline font-bold border-4 border-background-600">
+                        {link.text}
+                    </div>
                 </a>
             ))
         }
     </nav>
-</div>
+</Block>
 
 <style>
-
     h2 {
         margin-top: 0;
     }
