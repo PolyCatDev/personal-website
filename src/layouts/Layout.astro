@@ -2,13 +2,20 @@
 interface Props {
     title: string;
     description: string;
+    footer?: boolean;
 }
 
-const { title, description } = Astro.props;
+const { title, description, footer = false } = Astro.props;
+
+let hasFooter, htmlFull;
+if (footer === true) {
+    htmlFull = "h-full"
+    hasFooter = "flex flex-col h-full";
+}
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class={htmlFull}>
     <head>
         <meta charset="UTF-8" />
         <meta name="description" content={description} />
@@ -17,7 +24,7 @@ const { title, description } = Astro.props;
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
     </head>
-    <body class="bg-background-600 text-foreground-500 font-sans bg-bkg-pattern bg-size bg-[length:800px] selection:bg-blue-200">
+    <body class=`bg-background-600 text-foreground-500 font-sans bg-bkg-pattern bg-size bg-[length:800px] selection:bg-blue-200 ${hasFooter}`>
         <slot />
     </body>
 </html>
