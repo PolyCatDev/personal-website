@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 import LinkTree from "../components/LinkTree.astro";
 import Spacer from "../components/Spacer.astro";
 import Iframe from "../components/Iframe.astro";
@@ -11,6 +12,7 @@ const Description = "PolyCat's place on the web";
 
 const Mastodon = "https://sunny.garden/@PolyCat";
 
+// Link Tree
 const SocialLinks = [
     {
         href: "https://sunny.garden/@PolyCat",
@@ -61,7 +63,7 @@ const ProjectLinks = [
 ];
 ---
 
-<Layout title={Title} description={Description}>
+<Layout title={Title} description={Description} footer={true}>
     <a rel="me" href={Mastodon} aria-label="Hidden Mastodon validation link"
     ></a>
     <div class="flex justify-center">
@@ -100,4 +102,5 @@ const ProjectLinks = [
             </div>
         </div>
     </div>
+    <Footer />
 </Layout>
