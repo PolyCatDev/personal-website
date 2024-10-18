@@ -5,6 +5,7 @@ import Footer from "../components/Footer.astro";
 import LinkTree from "../components/LinkTree.astro";
 import Spacer from "../components/Spacer.astro";
 import Iframe from "../components/Iframe.astro";
+import List from "../components/List.astro";
 
 const Title = "CatPlace - Home";
 const HeaderTitle = "Welocome to CatPlace";
@@ -61,6 +62,25 @@ const ProjectLinks = [
         label: "Link to OBS WayKey project",
     },
 ];
+
+// To Do
+const todoItems = [
+    {
+        text: "Guestbook"
+    },
+    {
+        text: "Art Gallery"
+    },
+    {
+        text: "Featured Music Banner",
+    },
+    {
+        text: "Bash Factory Page"
+    },
+    {
+        text: "Flipper Caffe Page"
+    },
+];
 ---
 
 <Layout title={Title} description={Description} footer={true}>
@@ -99,6 +119,7 @@ const ProjectLinks = [
                     rounded={false}
                     height="420px"
                 />
+                <List title="To Do" items={todoItems} />
             </div>
         </div>
     </div>

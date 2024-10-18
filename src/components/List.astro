@@ -1,0 +1,27 @@
+---
+interface Items {
+    text: string;
+}
+
+interface Props {
+    title?: string;
+    items: Items[];
+}
+
+const { title, items } = Astro.props;
+
+import Block from '../layouts/Block.astro';
+
+let showTitle = false;
+if (title !== undefined && title !== null) {
+    showTitle = true;
+}
+---
+
+<Block>
+    {showTitle && <h2 class="text-center text-2xl font-bold m-2">{title}</h2>}
+
+    <ul>
+        {items.map((item) => <li class="ml-4 text-lg list-disc">{item.text}</li>)}
+    </ul>
+</Block>
