@@ -17,16 +17,15 @@ importers:
       astro:
         specifier: ^4.16.3
         version: 4.16.3(rollup@4.24.0)(typescript@5.5.4)
+      sharp:
+        specifier: ^0.33.5
+        version: 0.33.5
       tailwindcss:
         specifier: ^3.4.13
         version: 3.4.13
       typescript:
         specifier: ^5.5.4
         version: 5.5.4
-    devDependencies:
-      sharp:
-        specifier: ^0.33.5
-        version: 0.33.5
 
 packages:
 
