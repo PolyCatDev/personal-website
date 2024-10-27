@@ -1,4 +1,5 @@
 ---
+// Components
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
@@ -6,6 +7,11 @@ import LinkTree from "../components/LinkTree.astro";
 import Spacer from "../components/Spacer.astro";
 import Iframe from "../components/Iframe.astro";
 import List from "../components/List.astro";
+import Block from "../layouts/Block.astro";
+import { Image } from "astro:assets";
+
+// Images
+import pfp from "../media/pfp.png";
 
 const Title = "JellyCat Cafe - Home";
 const HeaderTitle = "Welocome to JellyCat Cafe";
@@ -66,22 +72,22 @@ const ProjectLinks = [
 // To Do
 const todoItems = [
     {
-        text: "Guestbook"
+        text: "Guestbook",
     },
     {
-        text: "Background Music"
+        text: "Background Music",
     },
     {
-        text: "Art Gallery"
+        text: "Art Gallery",
     },
     {
         text: "Featured Music Banner",
     },
     {
-        text: "Bash Factory Page"
+        text: "Bash Factory Page",
     },
     {
-        text: "Flipper Caffe Page"
+        text: "Flipper Caffe Page",
     },
 ];
 ---
@@ -93,18 +99,42 @@ const todoItems = [
         <div class="md:flex">
             <div>
                 <Header motto={Description}>{HeaderTitle}</Header>
+                <Block>
+                    <div class={"flex"}>
+                        <Image
+                            class={"rounded-full m-3"}
+                            src={pfp}
+                            height={180}
+                            width={180}
+                            alt={"Profile picture"}
+                            loading={"eager"}
+                        />
+                        <div class="max-w-sm flex flex-col justify-center">
+                            <h3 class="text-xl font-bold">
+                                Hi, I'm PolyCat and welcome to my virtual cat
+                                cafe
+                            </h3>
+                            <p class="mt-2">
+                                An artist and programmer that likes penguins and
+                                hot chocolate.
+                            </p>
+                        </div>
+                    </div>
+                </Block>
+
+                <LinkTree title="You can find me here" links={SocialLinks} />
+                <LinkTree title="Contact me here" links={ContactLinks} />
+            </div>
+            <div>
                 <div>
-                    <LinkTree
-                        title="You can find me here"
-                        links={SocialLinks}
-                    />
-                    <LinkTree title="Contact me here" links={ContactLinks} />
+                    <List title="To Do" items={todoItems} />
                     <LinkTree
                         title="Here are some of my cool projects"
                         links={ProjectLinks}
                     />
                 </div>
             </div>
+
             <div>
                 <Iframe
                     src="https://inv.nadeko.net/embed/RzM_-YTnQo0?autoplay=0&controls=1&dark_mode=true&continue=0&quality=hd720&related_videos=false&player_style=youtube&local=false"
@@ -122,7 +152,6 @@ const todoItems = [
                     rounded={false}
                     height="420px"
                 />
-                <List title="To Do" items={todoItems} />
             </div>
         </div>
     </div>
