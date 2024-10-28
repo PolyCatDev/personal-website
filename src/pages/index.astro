@@ -96,55 +96,60 @@ const todoItems = [
     <a rel="me" href={Mastodon} aria-label="Hidden Mastodon validation link"
     ></a>
     <section class="flex justify-center">
-        <section class="md:flex">
-            <section>
-                <Header motto={Description}>{HeaderTitle}</Header>
-                <Block>
-                    <div class={"flex"}>
-                        <Image
-                            class={"rounded-full m-3"}
-                            src={pfp}
-                            height={180}
-                            width={180}
-                            alt={"Profile picture"}
-                            loading={"eager"}
-                        />
-                        <div class="max-w-sm flex flex-col justify-center">
-                            <h3 class="text-xl font-bold">
-                                Hi, I'm PolyCat and welcome to my virtual cat
-                                cafe
-                            </h3>
-                            <p class="mt-2">
-                                An artist and programmer that likes penguins and
-                                hot chocolate.
-                            </p>
+        <section class="lg:flex">
+            <section class="md:flex">
+                <section>
+                    <Header motto={Description}>{HeaderTitle}</Header>
+                    <Block>
+                        <div class={"flex place-items-center"}>
+                            <Image
+                                class={"rounded-full m-3"}
+                                src={pfp}
+                                height={160}
+                                width={160}
+                                alt={"Profile picture"}
+                                loading={"eager"}
+                            />
+                            <div class="max-w-sm flex flex-col">
+                                <h3 class="text-xl font-bold">
+                                    Hi, I'm PolyCat and welcome to my virtual
+                                    cat cafe
+                                </h3>
+                                <p class="mt-2">
+                                    An artist and programmer that likes penguins
+                                    and hot chocolate.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </Block>
+                    </Block>
 
-                <LinkTree title="You can find me here" links={SocialLinks} />
-                <LinkTree title="Contact me here" links={ContactLinks} />
-            </section>
-            <section>
-                <div>
-                    <List title="To Do" items={todoItems} />
                     <LinkTree
-                        title="Here are some of my cool projects"
-                        links={ProjectLinks}
+                        title="You can find me here"
+                        links={SocialLinks}
                     />
-                </div>
+                    <LinkTree title="Contact me here" links={ContactLinks} />
+                </section>
+                <section>
+                    <div>
+                        <List title="To Do" items={todoItems} />
+                        <LinkTree
+                            title="Here are some of my cool projects"
+                            links={ProjectLinks}
+                        />
+                    </div>
+                </section>
             </section>
-
-            <section>
-                <Iframe
-                    src="https://inv.nadeko.net/embed/RzM_-YTnQo0?autoplay=0&controls=1&dark_mode=true&continue=0&quality=hd720&related_videos=false&player_style=youtube&local=false"
-                    title="Featred Video Player"
-                    text="Featured Video"
-                    height="315px"
-                />
-                <!--૮₍´˶• . • ⑅ ₎ა  ::  /ᐠ. ｡.ᐟ\ᵐᵉᵒʷˎˊ˗  ::  /ᐠ - ˕ -マ  ::  ≽^• ˕ • ^≼></!-->
-                <Spacer> ૮₍´˶• . • ⑅ ₎ა </Spacer>
-
+            <section class="md:flex lg:flex-col">
+                <div class="flex-grow">
+                    <Iframe
+                        src="https://inv.nadeko.net/embed/RzM_-YTnQo0?autoplay=0&controls=1&dark_mode=true&continue=0&quality=hd720&related_videos=false&player_style=youtube&local=false"
+                        title="Featred Video Player"
+                        text="Featured Video"
+                        height="315px"
+                    />
+                    <!--૮₍´˶• . • ⑅ ₎ა  ::  /ᐠ. ｡.ᐟ\ᵐᵉᵒʷˎˊ˗  ::  /ᐠ - ˕ -マ  ::  ≽^• ˕ • ^≼></!-->
+                    <Spacer> ૮₍´˶• . • ⑅ ₎ა </Spacer>
+                </div>
                 <Iframe
                     src="https://www5.cbox.ws/box/?boxid=953460&boxtag=UrEazW"
                     title="Chat Box"
