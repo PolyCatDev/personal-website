@@ -95,9 +95,9 @@ const todoItems = [
 <Layout title={Title} description={Description} footer={true}>
     <a rel="me" href={Mastodon} aria-label="Hidden Mastodon validation link"
     ></a>
-    <div class="flex justify-center">
-        <div class="md:flex">
-            <div>
+    <section class="flex justify-center">
+        <section class="md:flex">
+            <section>
                 <Header motto={Description}>{HeaderTitle}</Header>
                 <Block>
                     <div class={"flex"}>
@@ -124,8 +124,8 @@ const todoItems = [
 
                 <LinkTree title="You can find me here" links={SocialLinks} />
                 <LinkTree title="Contact me here" links={ContactLinks} />
-            </div>
-            <div>
+            </section>
+            <section>
                 <div>
                     <List title="To Do" items={todoItems} />
                     <LinkTree
@@ -133,9 +133,9 @@ const todoItems = [
                         links={ProjectLinks}
                     />
                 </div>
-            </div>
+            </section>
 
-            <div>
+            <section>
                 <Iframe
                     src="https://inv.nadeko.net/embed/RzM_-YTnQo0?autoplay=0&controls=1&dark_mode=true&continue=0&quality=hd720&related_videos=false&player_style=youtube&local=false"
                     title="Featred Video Player"
@@ -152,8 +152,8 @@ const todoItems = [
                     rounded={false}
                     height="420px"
                 />
-            </div>
-        </div>
-    </div>
+            </section>
+        </section>
+    </section>
     <Footer />
 </Layout>
