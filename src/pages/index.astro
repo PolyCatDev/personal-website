@@ -7,11 +7,7 @@ import LinkTree from "../components/LinkTree.astro";
 import Spacer from "../components/Spacer.astro";
 import Iframe from "../components/Iframe.astro";
 import List from "../components/List.astro";
-import Block from "../layouts/Block.astro";
-import { Image } from "astro:assets";
-
-// Images
-import pfp from "../media/pfp.png";
+import PersonalCard from "../components/PersonalCard.astro";
 
 const Title = "JellyCat Cafe - Home";
 const HeaderTitle = "Welocome to JellyCat Cafe";
@@ -100,28 +96,8 @@ const todoItems = [
             <section class="md:flex">
                 <section>
                     <Header motto={Description}>{HeaderTitle}</Header>
-                    <Block>
-                        <div class={"flex place-items-center"}>
-                            <Image
-                                class={"rounded-full m-3"}
-                                src={pfp}
-                                height={160}
-                                width={160}
-                                alt={"Profile picture"}
-                                loading={"eager"}
-                            />
-                            <div class="max-w-sm flex flex-col">
-                                <h3 class="text-xl font-bold">
-                                    Hi, I'm PolyCat and welcome to my virtual
-                                    cat cafe
-                                </h3>
-                                <p class="mt-2">
-                                    An artist and programmer that likes penguins
-                                    and hot chocolate.
-                                </p>
-                            </div>
-                        </div>
-                    </Block>
+
+                    <PersonalCard />
 
                     <LinkTree
                         title="You can find me here"
@@ -130,13 +106,11 @@ const todoItems = [
                     <LinkTree title="Contact me here" links={ContactLinks} />
                 </section>
                 <section>
-                    <div>
-                        <List title="To Do" items={todoItems} />
-                        <LinkTree
-                            title="Here are some of my cool projects"
-                            links={ProjectLinks}
-                        />
-                    </div>
+                    <List title="To Do" items={todoItems} />
+                    <LinkTree
+                        title="Here are some of my cool projects"
+                        links={ProjectLinks}
+                    />
                 </section>
             </section>
             <section class="md:flex lg:flex-col">
