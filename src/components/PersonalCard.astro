@@ -26,15 +26,15 @@ if (!imageCircle) {
 
 let isRight:string;
 if (!imageRight) {
-    isRight = "flex-row";
+    isRight = "lg:flex-row";
 } else {
-    isRight = "flex-row-reverse";
+    isRight = "lg:flex-row-reverse";
 }
 ---
 
 <Block>
     <div
-        class={`flex flex-col text-center lg:text-left lg:${isRight} place-items-center`}
+        class={`flex flex-col text-center lg:text-left ${isRight} place-items-center`}
     >
         <Image
             class={`${isCircle} m-3`}
