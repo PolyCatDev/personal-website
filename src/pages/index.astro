@@ -9,6 +9,10 @@ import Iframe from "../components/Iframe.astro";
 import List from "../components/List.astro";
 import PersonalCard from "../components/PersonalCard.astro";
 
+// Images
+import kirby from "../media/kirby-mushroom.gif";
+import pfp from "../media/pfp.png";
+
 const Title = "JellyCat Cafe - Home";
 const HeaderTitle = "Welocome to JellyCat Cafe";
 const Description = "PolyCat's virtual cat cafe";
@@ -100,7 +104,14 @@ const todoItems = [
                 <section>
                     <Header motto={Description}>{HeaderTitle}</Header>
 
-                    <PersonalCard />
+                    <PersonalCard
+                        image={pfp}
+                        alt="PolyCat's profile picture"
+                        title="Hi, I'm PolyCat and welcome to my virtual cat cafe"
+                    >
+                        I'm an artist and programmer that likes penguins and hot
+                        chocolate.
+                    </PersonalCard>
 
                     <LinkTree
                         title="You can find me here"
@@ -109,6 +120,18 @@ const todoItems = [
                     <LinkTree title="Contact me here" links={ContactLinks} />
                 </section>
                 <section>
+                    <PersonalCard
+                        image={kirby}
+                        alt="Kirby sitting on a mushroom"
+                        title="About this website"
+                        imageRight={true}
+                        imageCircle={false}
+                    >
+                        JellyCat Cafe is a combination between a personal
+                        website, portfolio and archive. It's mainly a place for
+                        me to post and archive my stuff. More things will be
+                        added with time (see todo list).</PersonalCard
+                    >
                     <LinkTree
                         title="Here are some of my cool projects"
                         links={ProjectLinks}
