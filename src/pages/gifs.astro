@@ -5,6 +5,6 @@ import Layout from "../layouts/Layout.astro";
 const gifImages = await Astro.glob("../assets/gifs/*.gif");
 ---
 
-<Layout title="Jellycat Cafe - Gif Collection">
+<Layout title="Gif Collection">
     {gifImages.map((image) => <Image src={image.default} alt={`GIF image`} />)}
 </Layout>
