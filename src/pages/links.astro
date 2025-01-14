@@ -1,0 +1,88 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Block from "../layouts/Block.astro";
+import Header from "../components/Header.astro";
+---
+
+<Layout title="Links" description="List of links to palces on the web">
+    <Header motto="Welcome to my index">Links</Header>
+    <Block>
+        <div class="flex justify-center flex-wrap">
+            <section class="lg:flex">
+            <section class="p-3 m-2">
+                <h1>Websites</h1>
+                <ul>
+                    <li><a href="https://ne0nbandit.neocities.org">Ne0nBandit Street</a></li>
+                    <li><a href="https://puppygirlbelly.github.io/PuppyBrained/">Puppy Brained</a></li>
+                    <li><a href="https://loveweb.neocities.org/">LoveWeb</a></li>
+                    <li><a href="https://htmlforpeople.com/">HTML for the People]</a></li>
+                    <li><a href="https://itzzen.net/">Allissa's comfy burrow</a></li>
+                    <li><a href="https://cinni.net/">Cinni's Dream Home</a></li>
+                    <li><a href="https://adilene.net/">Virtual Diva</a></li>
+                    <li><a href="https://rotatingsandwiches.wordpress.com/">Rotating Sandwiches</a></li>
+                    <li><a href="https://kakashi.neocities.org/">Korean Meme Short</a></li>
+                </ul>
+            </section>
+            <section class="p-3 m-2">
+                <h1>Webrings</h1>
+                <ul>
+                    <li><a href="https://transring.neocities.org/">Transring the Web</a></li>
+                    <li><a href="https://webring.bucketfish.me/">Bucketfish</a></li>
+                    <li><a href="https://webring.adilene.net/index.php">Vocaloid</a></li>
+                </ul>
+            </section>
+            </section>
+            <section class="lg:flex">
+            <section class="p-3 m-2">
+                <h1>Tools</h1>
+                <ul>
+                    <li><a href="https://readme.so/">readme.so</a></li>
+                    <li><a href="https://nekoweb.org/">NekoWeb</a></li>
+                    <li><a href="https://blahaj.land">Blahaj Land</a></li>
+                    <li><a href="http://amsat.org.ar/pass.htm">AmSat</a></li>
+                </ul>
+            </section>
+            <section class="p-3 m-2">
+                <h1>Indexes</h1>
+                <ul>
+                    <li><a href="https://github.com/xyflow/awesome-node-based-uis">Awesome Node Based UIs</a></li>
+                    <li><a href="https://www.reddit.com/r/languagelearning/wiki/resources/#wiki_japanese">Japanese Language Learning</a></li>
+                </ul>
+            </section>
+            </section>
+        </div>
+    </Block>
+</Layout>
+
+<style>
+    a:hover {
+        text-decoration: underline;
+    }
+    h1 {
+        font-size: 2em;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    h3 {
+        font-size: 1.17em;
+        font-weight: bold;
+    }
+    p {
+        margin: 1em 0;
+    }
+    ul, ol {
+        display: block;
+        list-style-type: disc;
+        padding-left: 20px;
+        margin: 1em 0;
+    }
+    ol {
+        list-style-type: decimal;
+    }
+    li {
+        display: list-item;
+    }
+</style>
