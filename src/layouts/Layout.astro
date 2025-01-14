@@ -1,21 +1,17 @@
 ---
+import Footer from '../components/Footer.astro';
+
 interface Props {
     title: string;
     description: string;
-    footer?: boolean;
+    noFooter?: boolean;
 }
 
-const { title, description, footer = false } = Astro.props;
-
-let hasFooter, htmlFull;
-if (footer === true) {
-    htmlFull = "h-full"
-    hasFooter = "flex flex-col h-full";
-}
+const { title, description, noFooter = false } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" class={htmlFull}>
+<html lang="en" class="h-full">
     <head>
         <meta charset="UTF-8" />
         <meta name="description" content={description} />
@@ -24,8 +20,11 @@ if (footer === true) {
         <meta name="generator" content={Astro.generator} />
         <title>{`${title} @ JellyCat Cafe`}</title>
     </head>
-    <body class=`bg-background-600 text-foreground-500 font-sans bg-bkg-pattern bg-size bg-[length:800px] selection:bg-blue-200 ${hasFooter}`>
-        <slot />
+    <body class="bg-background-600 text-foreground-500 font-sans bg-bkg-pattern bg-size bg-[length:800px] selection:bg-blue-200 flex flex-col h-full">
+        <div class="block">
+            <slot />
+        </div>
+        <Footer hidden={noFooter}>
     </body>
 </html>
 <style is:global></style>

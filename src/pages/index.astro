@@ -2,7 +2,6 @@
 // Components
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 import LinkTree from "../components/LinkTree.astro";
 import Spacer from "../components/Spacer.astro";
 import Iframe from "../components/Iframe.astro";
@@ -80,7 +79,7 @@ const todoItems = [
 ];
 ---
 
-<Layout title={Title} description={Description} footer={true}>
+<Layout title={Title} description={Description}>
     <a rel="me" href={Mastodon} aria-label="Hidden Mastodon validation link"
     ></a>
     <section class="flex justify-center">
@@ -145,5 +144,4 @@ const todoItems = [
             </section>
         </section>
     </section>
-    <Footer />
 </Layout>
