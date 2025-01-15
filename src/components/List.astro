@@ -1,27 +1,28 @@
 ---
+import Block from "../layouts/Block.astro";
+import ListElement from "./elements/ListElement.astro";
+import { Image } from "astro:assets";
+
+
 interface Items {
     text: string;
+    url?: string;
 }
 
 interface Props {
     title?: string;
     items: Items[];
+    image?: ImageMetadata
 }
 
-const { title, items } = Astro.props;
-
-import Block from '../layouts/Block.astro';
-
-let showTitle = false;
-if (title !== undefined && title !== null) {
-    showTitle = true;
-}
+const { title, items, image } = Astro.props;
 ---
 
 <Block>
-    {showTitle && <h2 class="text-center text-3xl font-bold m-2">{title}</h2>}
-
-    <ul>
-        {items.map((item) => <li class="text-center text-lg">{item.text}</li>)}
-    </ul>
+    <div class="flex justify-around flex-wrap">
+        {image && <Image class="" src={image} alt="Miku doing a little dance" loading={"eager"}/>}
+        <div>
+            <ListElement title={title} items={items} />
+        </div>
+    </div>
 </Block>

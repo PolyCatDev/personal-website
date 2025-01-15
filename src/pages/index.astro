@@ -11,6 +11,7 @@ import PersonalCard from "../components/PersonalCard.astro";
 // Images
 import kirby from "../assets/kirby-mushroom.gif";
 import pfp from "../assets/pfp.png";
+import miku from "../assets/gifs/miku-shimie-shimie.gif";
 
 const Title = "Home";
 const HeaderTitle = "Welcome to JellyCat Cafe";
@@ -120,7 +121,7 @@ const todoItems = [
                         title="Here are some of my cool projects"
                         links={ProjectLinks}
                     />
-                    <List title="To Do" items={todoItems} />
+                    <List title="To Do" items={todoItems} image={miku}/>
                 </section>
             </section>
             <section class="md:flex lg:block">
