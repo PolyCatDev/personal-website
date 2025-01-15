@@ -40,6 +40,11 @@ const SocialLinks = [
 
 const ContactLinks = [
     {
+        href: "http://users4.smartgb.com/g/g.php?a=s&i=g44-82750-38",
+        text: "Guestbook",
+        label: "Link to the JellyCat Cafe Guestbook",
+    },
+    {
         href: "mailto:contact.polycat@proton.me",
         text: "contact.polycat\u200B@proton.me",
         label: "Email link to contact PolyCat",
@@ -71,7 +76,6 @@ const ProjectLinks = [
 
 // To Do
 const todoItems = [
-    { text: "Guestbook" },
     { text: "Background Music" },
     { text: "Art Gallery" },
     { text: "Featured Music Banner" },
@@ -102,7 +106,7 @@ const todoItems = [
                         title="You can find me here"
                         links={SocialLinks}
                     />
-                    <LinkTree title="Contact me here" links={ContactLinks} />
+                    <LinkTree title="Contact" links={ContactLinks} />
                 </section>
                 <section>
                     <PersonalCard
@@ -121,7 +125,7 @@ const todoItems = [
                         title="Here are some of my cool projects"
                         links={ProjectLinks}
                     />
-                    <List title="To Do" items={todoItems} image={miku}/>
+                    <List title="To Do" items={todoItems} image={miku} />
                 </section>
             </section>
             <section class="md:flex lg:block">
