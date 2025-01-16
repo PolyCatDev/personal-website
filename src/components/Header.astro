@@ -12,9 +12,15 @@ const { motto } = Astro.props;
 
     <nav class="flex justify-center pt-1">
         <ul class="flex space-x-2 font-normal text-foreground-300">
-            <li class="hover:underline"><a href="/">Home</a></li>
-            <li class="hover:underline"><a href="/gif-collection">Gif Collection</a></li>
-            <li class="hover:underline"><a href="/links">Links</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/gif-collection">Gif Collection</a></li>
+            <li><a href="/links">Links</a></li>
         </ul>
     </nav>
 </header>
+
+<style>
+    a:hover {
+        text-decoration-line: underline;
+    }
+</style>
