@@ -1,3 +1,11 @@
-<div class="bg-background-500 p-6 m-5 rounded-xl">
+---
+interface Props {
+    tailwindClass?: string;
+}
+
+const {tailwindClass} = Astro.props;
+---
+
+<div class=`bg-background-500 p-6 m-5 rounded-xl ${tailwindClass}` >
     <slot />
 </div>
