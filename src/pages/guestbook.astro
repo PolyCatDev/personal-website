@@ -1,0 +1,22 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Block from "../layouts/Block.astro";
+---
+
+<Layout title="Callbook" description="The JellyCat Cafe callbook">
+    <Header motto="Feel free to sign yourself"> Callbook </Header>
+    <div class="flex h-screen">
+        <Block tailwindClass="hidden md:block"></Block>
+        <Block tailwindClass="hidden lg:block"></Block>
+        <Block tailwindClass="hidden lg:block"></Block>
+        <Block tailwindClass="w-screen">
+            <iframe
+                src="https://jellycat-cafe.atabook.org/"
+                class="w-full h-full rounded"></iframe>
+        </Block>
+        <Block tailwindClass="hidden lg:block"></Block>
+        <Block tailwindClass="hidden lg:block"></Block>
+        <Block tailwindClass="hidden md:block"></Block>
+    </div>
+</Layout>
