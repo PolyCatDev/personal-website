@@ -4,10 +4,10 @@ import Footer from '../components/Footer.astro';
 interface Props {
     title: string;
     description: string;
-    noFooter?: boolean;
+    footer?: boolean;
 }
 
-const { title, description, noFooter = false } = Astro.props;
+const { title, description, footer = true } = Astro.props;
 ---
 
 <!doctype html>
@@ -24,7 +24,7 @@ const { title, description, noFooter = false } = Astro.props;
         <section class="block" id="block-body">
             <slot />
         </section>
-        <Footer hidden={noFooter}>
+        {footer && <Footer>}
     </body>
 </html>
 <style is:global></style>

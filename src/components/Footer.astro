@@ -1,15 +1,4 @@
 ---
-interface Props {
-    hidden?: boolean;
-}
-
-const {hidden} = Astro.props;
-
-let hide = "";
-if (hidden === true) {
-    hide = "hidden"
-}
-
 import Image from "astro/components/Image.astro";
 
 import nbbanner from "../assets/buttons/nbbanner.png";
@@ -83,7 +72,7 @@ const links = [
 ];
 ---
 
-<footer class=`bg-background-500 p-4 mt-auto ${hide}`>
+<footer class="bg-background-500 p-4 mt-auto">
     <nav class="m-1 text-center text-foreground-200">
         {
             links.map((link) => (
