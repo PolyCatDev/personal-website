@@ -61,7 +61,7 @@ let tools = [
     },
     {
         text: "Curses",
-        href: "https://github.com/mmpneo/curses"
+        href: "https://github.com/mmpneo/curses",
     },
     {
         text: "NekoWeb",
@@ -80,13 +80,29 @@ let tools = [
 let indexes = [
     {
         text: "Awesome Node Based UIs",
-        href: "https://github.com/xyflow/awesome-node-based-uis"
+        href: "https://github.com/xyflow/awesome-node-based-uis",
     },
     {
         text: "Language Learning",
-        href: "https://www.reddit.com/r/languagelearning/wiki/resources/#wiki_japanese"
-    }
-]
+        href: "https://www.reddit.com/r/languagelearning/wiki/resources/#wiki_japanese",
+    },
+];
+
+let featuredVideoLog = [
+    {
+        text: "COOL TIMES: GRAND TOUR",
+        href: "https://www.youtube.com/watch?v=pSQ4q50ipPg",
+        note: "Removed 20 Jan 2025"
+    },
+    {
+        text: "GLITCHX 2024",
+        href: "https://youtu.be/q31HGLVBObs?si=MLXuA8Pk3ylqnDie",
+    },
+    {
+        text: "Kirby Dance",
+        href: "https://www.youtube.com/watch?v=RzM_-YTnQo0",
+    },
+];
 ---
 
 <Layout title="Links" description="List of links to palces on the web">
@@ -110,6 +126,14 @@ let indexes = [
                         <ListElement title="Indexes" items={indexes} />
                     </div>
                 </section>
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <div class="text-yellow-100">
+                <ListElement
+                    title="Past Featured Videos"
+                    items={featuredVideoLog}
+                />
             </div>
         </div>
     </Block>
