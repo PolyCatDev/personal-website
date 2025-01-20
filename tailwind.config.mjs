@@ -59,6 +59,9 @@ export default {
 		extend: {
 			backgroundImage: {
 				'bkg-pattern': "url('/src/assets/bkg_pattern.svg')"
+			},
+			cursor: {
+				'capitaine': "url('/src/assets/capitaine-cursor.png'), auto"
 			}
 		},
 	},

@@ -20,11 +20,10 @@ const { title, description, footer = true } = Astro.props;
         <meta name="generator" content={Astro.generator} />
         <title>{`${title} @ JellyCat Cafe`}</title>
     </head>
-    <body class="bg-background-600 text-foreground-500 font-sans bg-bkg-pattern bg-size bg-[length:800px] selection:bg-blue-200 flex flex-col h-full">
+    <body class="bg-background-600 text-foreground-500 font-sans bg-bkg-pattern bg-size bg-[length:800px] selection:bg-blue-200 flex flex-col h-full cursor-capitaine">
         <section class="block" id="block-body">
             <slot />
         </section>
         {footer && <Footer>}
     </body>
 </html>
-<style is:global></style>
