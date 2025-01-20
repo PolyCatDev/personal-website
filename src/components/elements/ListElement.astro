@@ -1,7 +1,7 @@
 ---
 interface Items {
     text: string;
-    url?: string;
+    href?: string;
 }
 
 interface Props {
@@ -18,7 +18,7 @@ const { title, items } = Astro.props;
     {
         items.map((item) => (
             <li class="list-disc ml-5">
-                {item.url ? <a href={item.url} class="hover:underline">{item.text}</a> : item.text}
+                {item.href ? <a href={item.href} class="hover:underline">{item.text}</a> : item.text}
             </li>
         ))
     }
