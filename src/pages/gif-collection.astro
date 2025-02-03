@@ -11,7 +11,7 @@ const gifImages = await Astro.glob("../assets/gifs/collection/*.gif");
     <section class="flex flex-col md:flex-row md:flex-wrap md:justify-center md:items-start">
         {
             gifImages.map((image) => (
-                <Image src={image.default} alt={`GIF image`} class="rounded m-2 md:h-64 w-auto" />
+                <Image src={image.default} alt={`GIF image`} class="rounded-sm m-2 md:h-64 w-auto" />
             ))
         }
     </section>
