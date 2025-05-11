@@ -1,4 +1,5 @@
-# https://www.robotstxt.org/robotstxt.html
+# Docs: https://www.robotstxt.org/robotstxt.html
+# AI Scraper Blocklist: https://gist.github.com/edmondburnett/8694c18c8fdc38fd81ea23a4fae74a14
 
 User-agent: ChatGPT-User
 Disallow: /
