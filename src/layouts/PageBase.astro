@@ -6,7 +6,7 @@ interface Props {
 
 const { title = "changeme", description = "changeme" } = Astro.props;
 
-import "../styles/tailwind.css"
+import "../../tailwind.css"
 ---
 
 <!doctype html>
@@ -17,7 +17,7 @@ import "../styles/tailwind.css"
         <meta name="description" content={description} />
         <title>{title}</title>
     </head>
-    <body>
+    <body class="bg-jelly-background">
         <slot />
     </body>
 </html>

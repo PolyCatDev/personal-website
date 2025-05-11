@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+@theme {
+    --color-jelly-background: rgb(218, 207, 197);
+}
