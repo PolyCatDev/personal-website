@@ -12,6 +12,7 @@ import PersonalCard from "../components/PersonalCard.astro";
 import kirby from "../assets/kirby-mushroom.gif";
 import pfp from "../assets/pfp.png";
 import miku from "../assets/gifs/miku-shimie-shimie.gif";
+import { text } from "stream/consumers";
 
 const Title = "Home";
 const HeaderTitle = "Welcome to JellyCat Cafe";
@@ -49,6 +50,11 @@ const ContactLinks = [
         text: "contact.polycat\u200B@proton.me",
         label: "Email link to contact PolyCat",
     },
+    {
+        href: "https://keys.openpgp.org/vks/v1/by-fingerprint/DB63CA649EABAD334627F1BB93F51FCA4F61C83E",
+        text: "My Public PGP Key",
+        label: "Link to download my public PGP key"
+    }
 ];
 
 const ProjectLinks = [
