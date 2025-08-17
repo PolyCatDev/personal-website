@@ -1,4 +1,24 @@
-# Docs: https://www.robotstxt.org/robotstxt.html
+# NOTICE: The collection of content and other data on this
+# site through automated means, including any device, tool,
+# or process designed to data mine or scrape content, is
+# prohibited except (1) as provided by the below Content
+# Usage directives or (2) with express written permission
+# from PolyCat
+
+
+# The Content Usage directives in this file use syntax and
+# vocabulary from a proposed IETF standard drafted by the AI
+# Preferences (aipref) working group and have the meanings
+# set forth in that standard. To learn more, please see
+# https://contentsignals.org/.
+ 
+
+# To request permission to license our intellectual property
+# and/or other materials, please contact us at
+# contact.polycat@proton.me
+
+
+# Robots.txt Docs: https://www.robotstxt.org/robotstxt.html
 # AI Scraper Blocklist: https://gist.github.com/edmondburnett/8694c18c8fdc38fd81ea23a4fae74a14
 
 User-agent: ChatGPT-User
@@ -47,4 +67,5 @@ User-agent: cohere-ai
 Disallow: /
 
 User-agent: *
+Content-Usage: tdm=n, search=y
 Allow: /
