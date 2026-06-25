@@ -12,11 +12,10 @@ import PersonalCard from "../components/PersonalCard.astro";
 import kirby from "../assets/kirby-mushroom.gif";
 import pfp from "../assets/pfp.png";
 import miku from "../assets/gifs/miku-shimie-shimie.gif";
-import { text } from "stream/consumers";
 
 const Title = "Home";
 const HeaderTitle = "PolyCat's Web Space";
-const Description = "Portfolio and Link Tree";
+const Description = "Links to all my my stuff";
 
 const Mastodon = "https://sunny.garden/@PolyCat";
 
@@ -72,7 +71,7 @@ const ProjectLinks = [
 
 // To Do
 const todoItems = [
-    { text: "Full Website Rewrite" },
+    { text: "Full Website Overhaul" },
 ];
 ---
 
@@ -95,10 +94,10 @@ const todoItems = [
                     </PersonalCard>
 
                     <LinkTree
-                        title="You can find me here"
+                        title="My Socials"
                         links={SocialLinks}
                     />
-                    <LinkTree title="Contact me here" links={ContactLinks} />
+                    <LinkTree title="My eMail" links={ContactLinks} />
                 </section>
                 <section>
                     <PersonalCard
@@ -108,13 +107,12 @@ const todoItems = [
                         imageRight={true}
                         imageCircle={false}
                     >
-                        It's a combination between a personal
-                        website, portfolio and archive. It's mainly a place for
-                        me to post and archive my stuff. More things will be
-                        added with time (see to do list).</PersonalCard
+                        Currerly this is a place that just links to all my socials and such.
+                        A full website overhaul is in the works but this will do for now.
+                        </PersonalCard
                     >
                     <LinkTree
-                        title="Here are some of my cool projects"
+                        title="Coding projects"
                         links={ProjectLinks}
                     />
                     <List title="To Do" items={todoItems} image={miku} />
@@ -123,8 +121,8 @@ const todoItems = [
             <section class="md:flex lg:block">
                 <div class="grow">
                     <Iframe
-                        src="https://www.youtube-nocookie.com/embed/LKcT-aQuIFs?si=50PvG_abTg8eu087"
-                        title='"Microsoft broke my voice" by a_lilian'
+                        src="https://www.youtube-nocookie.com/embed/pSQ4q50ipPg?si=MXEDN4hx-xvdmGrE"
+                        title='"COOL TIMES: GRAND TOUR " by DeadlyComics in YouTube Video Player'
                         text="Featured Video"
                         height="315px"
                     />
