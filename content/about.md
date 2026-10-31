@@ -22,3 +22,20 @@ menu = "main"
 It is I, the cat of the poly from the far away land of Romania! My main hobbies are making computers do my bidding, 3D CGI and traditional art.
 
 I'm also currently in the long process of learning Japanese. All I have to say about that is 日本語難しいですね！
+
+## Ear candy
+
+<iframe
+    width="380"
+    height="380"
+    class="card"
+    style="max-width: 100%;"
+    src="https://www.youtube-nocookie.com/embed/videoseries?si=3US4k9msF7F_YWNV&amp;list=PLSKcIxFxGEQ0"
+    title="YouTube video player"
+    frameborder="0"
+    allow="clipboard-write; encrypted-media; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+</iframe>
+
+Playlist of my favorite tracks (^-^)
