@@ -21,4 +21,4 @@ menu = "main"
 
 It is I, the cat of the poly from the far away land of Romania! My main hobbies are making computers do my bidding, 3D CGI and traditional art.
 
-I'm also currently in the long process of learning Japanese. All I have to say is 日本語難しいですね！
+I'm also currently in the long process of learning Japanese. All I have to say about that is 日本語難しいですね！
