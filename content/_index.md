@@ -13,7 +13,17 @@ As for contact, feel free to shoot me an email over at [contact.polycat@proton.m
 
 Enjoy the show :))
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/pSQ4q50ipPg?si=TxqdBen4F03xojgA" title="YouTube video player" frameborder="0" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe
+    width="560"
+    height="315"
+    style="max-width: 100%;"
+    src="https://www.youtube-nocookie.com/embed/pSQ4q50ipPg?si=TxqdBen4F03xojgA"
+    title="YouTube video player"
+    frameborder="0"
+    allow="clipboard-write; encrypted-media; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+</iframe>
 
 
 ### Special thanks to
