@@ -38,6 +38,7 @@ All content is under the [CC BY](https://creativecommons.org/licenses/by/4.0/) l
 
 [![Internet Archive 88x31 banner](/88x31/internet-archive.88x31.webp)](https://archive.org/)
 [![Unicode Angel 88x31 banner](/88x31/unicode-angel.88x31.gif)](https://unicodeangel.neocities.org/)
+[![Vivirin Art 88x31 banner](/88x31/vivirin-art.88x31.png)](https://vivirinart.neocities.org/)
 [![Made with blender 88x31 banner](/88x31/made-with-blender.88x31.gif)](https://www.blender.org/)
 [![This website is Miku approved 88x31 banner](/88x31/miku-approved.88x31.gif)](https://www.youtube.com/watch?v=vnw8zURAxkU)
 [![Learn HTML 88x31 banner](/88x31/learn-html.88x31.gif)](https://htmlforpeople.com/)
