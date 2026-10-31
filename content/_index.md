@@ -16,7 +16,7 @@ Enjoy the show :))
 <iframe
     width="560"
     height="315"
-    style="max-width: 100%;"
+    style="max-width: 100%; border-radius: 12px;"
     src="https://www.youtube-nocookie.com/embed/pSQ4q50ipPg?si=TxqdBen4F03xojgA"
     title="YouTube video player"
     frameborder="0"
