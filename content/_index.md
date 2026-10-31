@@ -1,5 +1,5 @@
 ---
-description: PolyCat's fancy blog
+description: PolyCat's website.
 ---
 
 Hi there, I'm PolyCat and welcome to my website. Not much here right now but blog and project posts are to come.
