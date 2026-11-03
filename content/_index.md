@@ -4,7 +4,7 @@ description: PolyCat's website.
 
 Hi there, I'm PolyCat and welcome to my website. Not much here right now but blog and project posts are to come.
 
-You can also find me on [YouTube](https://www.youtube.com/channel/UCf36paen2kuD83Y4stQkoDQ), [Instagram](https://www.instagram.com/polycat.py) and [GitHub](https://github.com/PolyCatDev).
+You can also find me on [YouTube](https://www.youtube.com/channel/UCf36paen2kuD83Y4stQkoDQ), [Cara](https://cara.app/polycat) and [GitHub](https://github.com/PolyCatDev).
 
 
 As for contact, feel free to shoot me an email over at [contact.polycat@proton.me](mailto:contact.polycat@proton.me) and encrypt your message with [my PGP key](https://keys.openpgp.org/vks/v1/by-fingerprint/31749E9A16F7E1F8697DF09AB1EFADEC433DDF46) if you so wish.
