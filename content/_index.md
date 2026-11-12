@@ -35,7 +35,7 @@ Enjoy the show :))
 
 ---
 
-All content is under the [CC BY](https://creativecommons.org/licenses/by/4.0/) license.
+All content of mine on the site is under the [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/) license unless stated otherwise.
 
 [![Internet Archive 88x31 banner](/88x31/internet-archive.88x31.webp)](https://archive.org/)
 [![Vivirin Art 88x31 banner](/88x31/vivirin-art.88x31.png)](https://vivirinart.neocities.org/)
